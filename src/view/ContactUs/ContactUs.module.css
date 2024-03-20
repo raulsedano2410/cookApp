@@ -1,0 +1,161 @@
+.container {
+  background-color: #ffffff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_container {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbb03f;
+  padding: 30px 60px;
+  gap: 20px;
+  border-radius: 60px;
+  margin-bottom: 100px;
+}
+.title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  color: #ffffff;
+}
+.title_container > h3 {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  text-align: center;
+  background-color: #fbb03f;
+  margin: 0;
+}
+.title_container > span {
+  font-family: Inter;
+  background-color: #fbb03f;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: -0.015em;
+  text-align: center;
+}
+.form > input {
+  height: 45px;
+  margin: 0;
+  border-radius: 9px;
+  border: none;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  padding-left: 20px;
+}
+.form > input:focus {
+  outline: none;
+}
+.fullname {
+  grid-area: fullname;
+}
+.email {
+  grid-area: email;
+}
+.phone {
+  grid-area: phone;
+}
+.profession {
+  grid-area: profession;
+}
+.company {
+  grid-area: company;
+}
+.needs {
+  grid-area: needs;
+}
+.check {
+  grid-area: check;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.button_container {
+  grid-area: button_container;
+  width: 100%;
+  text-align: end;
+}
+.button {
+  width: fit-content;
+  appearance: none;
+  background-color: #c37500;
+  border: none;
+  padding: 1em 2em;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 9px;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -0.015em;
+  text-align: left;
+
+  color: #ffffff;
+}
+
+.check > span {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  text-align: left;
+  padding-left: 10px;
+  color: #ffffff;
+}
+.check > input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+.check input:checked {
+  position: relative;
+  background-color: transparent;
+}
+.check input:checked::after {
+  content: ''; /* Pseudo-elemento para representar el check */
+  position: absolute;
+  top: -3px;
+  left: 3px;
+  width: 4px; /* Tamaño del check */
+  height: 10px;
+  border: solid white; /* Estilo del check */
+  border-width: 0 2px 2px 0; /* Angulo del check */
+  transform-origin: bottom left; /* Ajusta la rotación del check */
+  transform: rotate(45deg); /* Rotación del check */
+}
+.form {
+  background-color: #fbb03f;
+  display: grid;
+  grid-template:
+    'fullname fullname'
+    'email phone'
+    'profession company'
+    'needs needs'
+    'check check'
+    'span button_container';
+  gap: 20px;
+}

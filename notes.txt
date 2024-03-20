@@ -1,0 +1,15 @@
+Mejoras de la página web:
+1. Optimización del botón "vector": Mantener estilos del navbar.
+
+2. Recalibrar tamaño de Flags y vista general en Customers: Ajustar según diseño en Figma.
+
+3. Formulario de ContactUs: Integración con Google Sheets.
+
+4. Mejoras de Footer, Navbar y responsive: Pendientes de la Orden y actualización en Figma.
+
+ Próximas implementaciones de la UX en Figma:
+1. Rediseño del Navbar: Mejorar UX para barra de navegación en general o por sección (Home-All).
+
+2. Diseñar Footer: Reemplazar imagen actual.
+
+3. Añadir diseño responsivo: Integrar diseño adaptable para mejorar la experiencia.

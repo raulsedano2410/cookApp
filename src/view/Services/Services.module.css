@@ -1,0 +1,35 @@
+.service_container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    'title_container'
+    'cards_container';
+  background-color: #fff;
+}
+
+.cards_container {
+  grid-area: cards_container;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.title_container {
+  grid-area: title_container;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 60px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  text-align: center;
+}

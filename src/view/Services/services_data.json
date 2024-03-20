@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "comedor_corporativo.png",
+    "title": "Comedor Corporativo",
+    "description": "Nos adaptamos al requerimiento corporativo con nuestro menú corporativo, desayuno corporativo y platos a la carta."
+  },
+  {
+    "id": 2,
+    "image": "comedor_mangement_system.jpg",
+    "title": "Comedor Mangement System",
+    "description": "Sistema de control de servicio: manejo de base de datos, reportes diarios, controlde operaciones.."
+  },
+  {
+    "id": 3,
+    "image": "food_stop.jpg",
+    "title": "Food Stop",
+    "description": "Puntos de acceso a snacks, cafe, gaseosas, fritas y alimentos varios."
+  },
+  {
+    "id": 4,
+    "image": "catering.jpg",
+    "title": "Catering y Buffet",
+    "description": "Sistema de control de servicio: manejo de base de datos, reportes diarios, controlde operaciones."
+  }
+]

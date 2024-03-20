@@ -1,0 +1,17 @@
+.container {
+  height: 100%;
+  position: relative;
+}
+.vector {
+  transform: rotate(-90deg);
+  display: inline-block;
+  position: absolute; /* Establece la posición absoluta para el vector */
+  bottom: 5%; /* Coloca el vector en la mitad superior del contenedor */
+  left: 50%; /* Coloca el vector en el centro horizontal del contenedor */
+  transform: translate(-50%, -50%) rotate(-90deg); /* Centra el vector vertical y horizontalmente y lo rota */
+  font-size: 34px;
+  color: #ffff;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 100;
+}
