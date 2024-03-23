@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+
+
 import styles from './Navbar.module.css';
+
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(window.localStorage.getItem('text'));

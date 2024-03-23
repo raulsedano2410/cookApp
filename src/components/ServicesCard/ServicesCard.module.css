@@ -1,46 +1,180 @@
 .card_container {
-  width: 100%;
+  max-height: 265px;
+  max-width: 210px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  justify-content: flex-start;
-  max-width: 296px;
-  max-height: 377px;
-  min-height: 377px;
+  align-items: center;
+  justify-content: center;
   border: solid 1px #fbb03f;
   border-radius: 52px;
-  /* gap: 5px; */
-  /* padding: 10px; */
   word-wrap: break-word;
+  transition: height 1.5s step-end;
+
+  }
+
+
+  .img_container {
+    margin-bottom: 10px;
+  }
+
+  .card_img {
+    height: 100%;
+    width: 100%;
+object-position: center;
+object-fit: cover;
+border-radius: 52px;
+    height: 0;
+    opacity: 0;
+    transition: opacity .3s ease-out,
+    height .4s ease-out;
+
+  }
+
+  .title_article {
+height: 15px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.card_img {
-  width: 100%;
-  min-width: 296px;
-  /* height: 100%; */
-  min-height: 196px;
-  max-height: 196px;
-  object-position: center;
-  object-fit: cover;
-  border-radius: 52px;
-}
-.title_article {
-  font-family: Inter;
-  font-size: 16px;
+.title_article>h4 {
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 700;
-  line-height: 19px;
-  letter-spacing: -0.015em;
-  text-align: justified;
-  color: #fbb03f;
-  padding: 0 15px;
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      letter-spacing: -0.015em;
+      color: #fbb03f;
+}
+
+.article_container {
+  width: 210px;
+  height: 0;
+  opacity: 0;
+  transition: opacity .4s ease, height 0.3s ease;
 }
 
 .description_article {
-  font-family: Inter;
-  font-size: 16px;
+
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 400;
-  line-height: 19px;
+  font-size: 12px;
+  line-height: 15px;
   letter-spacing: -0.015em;
-  text-align: left;
-  padding: 0 15px;
+  padding: 0 20px;
+
+  color: #868686;
+
+
 }
+
+/* ACTIVES */
+.active {
+  opacity: 1;
+  height: 140px;
+  width: 210px;
+
+}
+
+.card_hidden {
+  background-color: #fbb03f;
+  height: 40px;
+
+}
+
+.title_hidden {
+  margin-bottom: 25px;
+}
+
+.title_hidden>h4 {
+  color: #ffffff;
+  /* END ACTIVES */
+
+}
+
+@media (min-width: 700px) {
+  .card_container {
+    min-height: 377px;
+    max-width: 296px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: solid 1px #fbb03f;
+    border-radius: 52px;
+    word-wrap: break-word;
+    transition: height 1.5s step-end;
+  }
+
+  .img_container {
+    opacity: 1;
+    height: 196px;
+    width: 296px;
+
+  }
+
+  .card_img {
+    height: 196px;
+    width: 296px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 52px;
+    opacity: 1;
+  }
+
+  .title_article>h4 {
+
+  padding: 0 15px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-align: justify;
+letter-spacing: -0.015em;
+
+/* N'QUISPE */
+color: #FBB03F;
+
+  }
+
+  .description_article {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: -0.015em;
+    text-align: left;
+    padding: 0 15px;
+  }
+  .title_hidden>h4 {
+    color: #fbb03f;
+  }
+
+
+  .article_container {
+
+    transition: none;
+    height: 196px;
+    width: 296px;
+    opacity: 1;
+  }
+
+  .active {
+    height: 196px;
+    width: 296px;
+
+    opacity: 1;
+    /* height: 140px; */
+  }
+
+  .card_hidden {
+    background-color: #ffffff;
+    height: 100%;
+
+    }
+    }

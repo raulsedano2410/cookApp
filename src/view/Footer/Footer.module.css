@@ -2,6 +2,12 @@
   /* position: relative; */
   /* background-color: #fbb03f; */
   height: 100%;
+  
+  position: absolute;
+  bottom: 0;
+  height: 25vh;
+  width: 100%;
+
 }
 .footer_container > img {
   width: 100%;

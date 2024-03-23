@@ -1,4 +1,3 @@
-import './normalize.css';
 import './App.css';
 import Home from './view/Home/Home';
 import AboutUs from './view/AboutUs/AboutUs';
@@ -12,7 +11,7 @@ function App() {
   return (
     <div className='container-sections'>
       <nav className='nav'>
-        <Navbar />
+        {/* <Navbar /> */}
       </nav>
       <section className='home'>
         <Home />
@@ -23,7 +22,7 @@ function App() {
       <section className='services'>
         <Services />
       </section>
-      <section className='customers'>
+      {/* <section className='customers'>
         <Customers />
       </section>
       <section className='contact-us'>
@@ -31,7 +30,7 @@ function App() {
       </section>
       <section className='footer'>
         <Footer />
-      </section>
+      </section> */}
     </div>
   );
 }

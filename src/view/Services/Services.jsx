@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Services.module.css';
 import servicesData from './services_data.json';
 import ServicesCard from '../../components/ServicesCard/ServicesCard';
@@ -8,22 +8,30 @@ import ServicesCard from '../../components/ServicesCard/ServicesCard';
 // import comedor_mangement from '../../assets/images/comedor_mangement.jpg';
 // import food_stop from '../../assets/images/food_stop.jpg';
 
+
+
 const Services = () => {
+  const [showCard, setShowCard] = useState('Comedor Corporativo');
+
+
   return (
     <div
-      className={styles.service_container}
+      className={styles.container}
       id='services-id'>
       <div className={styles.title_container}>
         <h3>Nuestros Servicios</h3>
       </div>
       <div className={styles.cards_container}>
-        {servicesData.map((prop) => {
+        {servicesData.map((s) => {
           return (
             <ServicesCard
-              key={prop.id}
-              image={prop.image}
-              title={prop.title}
-              description={prop.description}
+              showCard={showCard}
+              setShowCard={setShowCard}
+              key={s.id}
+              id={s.id}
+              image={s.image}
+              title={s.title}
+              description={s.description}
             />
           );
         })}

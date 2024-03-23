@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-body {
-  background-color: #000000;
-}
-
-.container-sections {
-  position: relative;
-}
-/* .container-sections > * {
-  text-align: center;
-} */
 
 .nav {
-  grid-area: nav;
   position: absolute;
 
   background-color: #33333300;
@@ -22,44 +11,29 @@ body {
 }
 .home {
   grid-area: home;
-  background-image: url('./assets/images/portada.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.home::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.567);
 }
 .about-us {
   grid-area: about-us;
-  background-color: rgb(255, 255, 255);
 }
 .services {
   grid-area: services;
-  background-color: rgb(47, 57, 255);
+  height: 100%;
+  width: 100%;
 }
 .customers {
   grid-area: customers;
-  background-color: rgb(255, 47, 213);
 }
 .contact-us {
   grid-area: contact-us;
-  background-color: rgb(201, 25, 78);
 }
-.footer {
-  grid-area: footer;
-  background-color: rgb(105, 95, 98);
-  position: absolute;
-  bottom: 0;
-  height: 25vh;
-  width: 100%;
+.container-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh auto 100vh;
+  grid-template-areas: 'home' 'about-us' 'services';
+  /* 'home' 100vh; */
+  /* 'about-us' 80vh 'services' 70vh 'customers' 70vh 'contact-us' 100vh; */
+
 }
 /* Estilo para la barra de desplazamiento */
 ::-webkit-scrollbar {
@@ -71,42 +45,4 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #fbb03fa7;
   border-radius: 6px;
-}
-
-/* mobile */
-.container-sections {
-  /* height: 100%; */
-  display: grid;
-  grid-template:
-    'home  home' 80vh
-    'about-us  about-us' 80vh
-    'services services' 80vh
-    'customers  customers' 80vh
-    'contact-us  contact-us' 80vh
-    'footer  footer' 80vh;
-}
-/* tablet */
-@media (min-width: 600px) {
-  .container-sections {
-    grid-template:
-      'home  home' 80vh
-      'about-us  about-us' 80vh
-      'services services' 80vh
-      'customers  customers' 80vh
-      'contact-us  contact-us' 80vh
-      'footer  footer' 80vh;
-  }
-}
-/* desktop */
-@media (min-width: 900px) {
-  .container-sections {
-    /* height: 100%; */
-    grid-template:
-      'home' 100vh
-      'about-us' 80vh
-      'services' 70vh
-      'customers' 70vh
-      'contact-us' 100vh;
-    /* 'footer' 30vh; */
-  }
 }

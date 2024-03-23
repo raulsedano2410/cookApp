@@ -7,8 +7,10 @@ const AboutUs = () => {
     <div
       id='about-id'
       className={styles.container}>
+      <div className={styles.title}>
+        <h3 >¿Qué nos hace diferentes?</h3>
+      </div>
       <article className={styles.article}>
-        <h3>¿Qué nos hace diferentes?</h3>
         <span>
           Somos especialistas en calidad, eficacia, bienestar y <br />{' '}
           adaptabilidad

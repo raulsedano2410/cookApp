@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
+
 import styles from './ServicesCard.module.css';
 import catering from '../../assets/images/catering.jpg';
 import comedor_corporativo from '../../assets/images/comedor_corporativo.png';
 import comedor_mangement from '../../assets/images/comedor_mangement.jpg';
 import food_stop from '../../assets/images/food_stop.jpg';
 
-const ServicesCard = (prop) => {
+const ServicesCard = (props) => {
   const [showImg, setShowImg] = useState();
   useEffect(() => {
-    switch (prop.image) {
+    switch (props.image) {
       case 'food_stop.jpg':
         setShowImg(food_stop);
         break;
@@ -27,18 +29,33 @@ const ServicesCard = (prop) => {
     }
   }, []);
 
+  const toogleImage = (event) => {
+    props.setShowCard(() => props.title);
+  };
+
+
   return (
-    <div className={styles.card_container}>
-      <div className={styles.img_container}>
+    <div
+      className={`${styles.card_container} ${props.showCard !== props.title ? styles.card_hidden : ''
+        }`}
+      onClick={toogleImage}
+    >
+      <div className={`${styles.img_container} ${props.showCard == props.title ? styles.active : ''}`}>
         <img
-          className={styles.card_img}
+          className={`${styles.card_img} ${props.showCard == props.title ? styles.active : ''}`}
           src={showImg}
-          alt={prop.title}
+          alt={props.title}
         />
       </div>
-      <article className={styles.article_container}>
-        <h4 className={styles.title_article}>{prop.title}</h4>
-        <p className={styles.description_article}>{prop.description}</p>
+      <div
+        className={`${styles.title_article} ${props.showCard !== props.title ? styles.title_hidden : ''
+          }`}>
+        <h4>{props.title}</h4>
+      </div>
+      <article
+        className={`${styles.article_container} ${props.showCard == props.title ? styles.active : ''
+          }`}>
+        <p className={styles.description_article}>{props.description}</p>
       </article>
     </div>
   );
