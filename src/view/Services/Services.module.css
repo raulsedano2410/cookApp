@@ -1,7 +1,7 @@
 .container {
-  height: 100%;
+  max-height: 100%;
   width: 100%;
-  max-height: 566px;
+  min-height: 700px;
   display: grid;
   grid-template-rows: 15% 85%;
   grid-template-areas:
@@ -104,8 +104,9 @@
   .container {
     height: 100%;
     width: 100%;
+    min-height: 700px;
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 8fr;
     grid-template-areas:
       'title_container'
       'cards_container';
