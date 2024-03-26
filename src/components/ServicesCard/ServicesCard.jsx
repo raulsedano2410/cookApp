@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 import styles from './ServicesCard.module.css';
 import catering from '../../assets/images/catering.jpg';
-import comedor_corporativo from '../../assets/images/comedor_corporativo.png';
+import comedor_corporativo from '../../assets/images/comedor_corp.svg';
 import comedor_mangement from '../../assets/images/comedor_mangement.jpg';
 import food_stop from '../../assets/images/food_stop.jpg';
 
