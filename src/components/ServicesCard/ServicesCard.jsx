@@ -38,7 +38,7 @@ const ServicesCard = (props) => {
         <div
             className={`${styles.card_container} ${props.showCard !== props.title ? styles.card_hidden : ''
                 }`}
-            onClick={toogleImage}
+
         >
             <div className={`${styles.img_container} ${props.showCard == props.title ? styles.active : ''}`}>
                 <img
@@ -49,7 +49,7 @@ const ServicesCard = (props) => {
             </div>
             <div
                 className={`${styles.title_article} ${props.showCard !== props.title ? styles.title_hidden : ''
-                    }`}>
+                    }`} onClick={toogleImage}>
                 <h4>{props.title}</h4>
             </div>
             <article
