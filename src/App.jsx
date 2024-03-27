@@ -22,10 +22,10 @@ function App() {
       <section className='services'>
         <Services />
       </section>
-      {/* <section className='customers'>
+      <section className='customers'>
         <Customers />
       </section>
-      <section className='contact-us'>
+      {/* <section className='contact-us'>
         <ContactUs />
       </section>
       <section className='footer'>

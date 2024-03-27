@@ -1,11 +1,13 @@
 .customers_container {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-rows: 3fr 6fr;
+  grid-template-rows: 2fr 8fr;
   grid-template-areas:
     'title_container '
     'flags_container';
+    place-content: center;
+    place-items: center;
 }
 .title_container {
   grid-area: title_container;
@@ -23,6 +25,16 @@
   letter-spacing: -0.015em;
   text-align: center;
   margin-bottom: 8px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+letter-spacing: -0.015em;
+
+color: #000000;
+
 }
 .title_container > span {
   font-family: Inter;
@@ -32,16 +44,42 @@
   letter-spacing: -0.015em;
   text-align: center;
   color: #868686;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+letter-spacing: -0.015em;
+
+color: #868686;
+
 }
 .flags_container {
   grid-area: flags_container;
   width: 100%;
   height: 100%;
-  display: flex;
+  /* max-width: 60vw; */
+  display: grid;
+  grid-auto-flow: dense;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
   align-items: center;
-  justify-content: center;
-  background-color: #fff;
+  justify-items: center;
+  gap: 1rem;
+  }
+.flag {
+  height: max-content;
+  min-width: 100px;
+  max-width: 450px;
+  /* width: minmax(100px, 150px); */
+  object-position: center;
+  object-fit: cover;
+  padding-inline: 10px;
+
 }
-.flags_container > img {
-  max-width: 60%;
+
+.flag>img {
+  width: 100%;
+  height: 100%;
 }
