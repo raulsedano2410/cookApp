@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-.nav {
-  position: absolute;
+/* .nav {
 
-  background-color: #33333300;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
 }
+*/
 .home {
   grid-area: home;
 }
@@ -33,6 +28,7 @@
   grid-template-areas: 'home' 'about-us' 'services' 'customers';
   /* 'home' 100vh; */
   /* 'about-us' 80vh 'services' 70vh 'customers' 70vh 'contact-us' 100vh; */
+  position: relative;
 
 }
 /* Estilo para la barra de desplazamiento */

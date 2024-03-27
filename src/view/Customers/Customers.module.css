@@ -59,11 +59,11 @@ color: #868686;
   grid-area: flags_container;
   width: 100%;
   height: 100%;
-  /* max-width: 60vw; */
+  max-width: min(80vw, 800px);
   display: grid;
   grid-auto-flow: dense;
-  grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+  grid-auto-rows: min(auto, 100px);
+  grid-template-columns: repeat(auto-fit, minmax(min(30vw, 150px), 1fr));
   align-items: center;
   justify-items: center;
   gap: 1rem;
