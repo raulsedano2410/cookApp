@@ -28,12 +28,12 @@ function App() {
                 <section className='customers'>
                     <Customers />
                 </section>
-                {/* <section className='contact-us'>
-        <ContactUs />
-      </section>
-      <section className='footer'>
-      <Footer />
-      </section> */}
+                <section className='contact-us'>
+                    <ContactUs />
+                </section>
+                <section className='footer'>
+                    <Footer />
+                </section>
             </div>
         </StateCompo>
     );

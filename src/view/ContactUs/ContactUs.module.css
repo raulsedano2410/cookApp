@@ -1,5 +1,7 @@
 .container {
   background-color: #ffffff;
+  min-height: 100vh;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -106,7 +108,7 @@
   font-weight: 700;
   line-height: 19px;
   letter-spacing: -0.015em;
-  text-align: left;
+  text-align: center;
 
   color: #ffffff;
 }
@@ -159,3 +161,79 @@
     'span button_container';
   gap: 20px;
 }
+@media only screen and (max-width: 700px) {
+  .form {
+    background-color: #fbb03f;
+    display: grid;
+    grid-template-areas:
+      'fullname '
+      'email '
+      'phone'
+      'profession '
+      'company'
+      'needs '
+      'check '
+      'button_container';
+    gap: 1em;
+  }
+
+  .form_container {
+    max-width: 70vw;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .form>input {
+    height: 36px;
+  }
+
+  .title_container>h3 {
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    color: #FFFFFF;
+  }
+
+  .title_container>span {
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    color: #FFFFFF;
+
+
+  }
+
+  .form_container {
+    border-radius: 30px;
+    padding: 20px 30px;
+
+  }
+
+  .form input {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    letter-spacing: -0.015em;
+
+    color: #868686;
+  }
+  }
