@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { counterContext } from './counterContext';
 
 const StateCompo = ({ children }) => {
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
 
     const handleToggle = () => {
         setToggle((t) => !t);
@@ -20,7 +20,7 @@ const StateCompo = ({ children }) => {
     };
     const toggleTrue = () => {
         setIsActive(true);
-        handleToggle();
+        // handleToggle();
 
     };
 
