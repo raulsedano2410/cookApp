@@ -11,15 +11,13 @@ const Footer = () => {
           alt='logo'
         />
       </div>
-      <div className={styles.metadata}>
 
-        <p>Dirección <br />
+      <p className={styles.address}>Dirección <br />
           Asoc. Villa Real Madrid II Mz B LT 10 S.M.P</p>
-        <p>Contácto <br />
+      <p className={styles.contact}>Contácto <br />
           998 244 597 <br />
           nquispe_buffete@hotmail.com</p>
-        <p>© Copyright N Quispe 2024</p>
-      </div>
+      <p className={styles.copyr}>© Copyright N Quispe 2024</p>
 
     </footer>
   );
