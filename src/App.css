@@ -9,8 +9,6 @@
 }
 .services {
   grid-area: services;
-  height: 100%;
-  width: 100%;
 }
 .customers {
   grid-area: customers;
@@ -22,16 +20,11 @@
   grid-area: footer;
 }
 .container-sections {
-  display: flex;
-  flex-direction: column;
-
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100vh 100vh min-content min-content 100vh min-content;
   grid-template-areas: 'home' 'about-us' 'services' 'customers' 'contact-us' 'footer';
-  /* 'home' 100vh; */
-  /* 'about-us' 80vh 'services' 70vh 'customers' 70vh 'contact-us' 100vh; */
   position: relative;
-  /* justify-items: center; */
 
 }
 /* Estilo para la barra de desplazamiento */

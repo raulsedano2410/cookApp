@@ -1,4 +1,7 @@
-
+.nav_container {
+  position: absolute;
+  top: 0;
+}
 
 .nav {
   width: 100%;
