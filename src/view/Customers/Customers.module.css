@@ -7,7 +7,7 @@
     'title_container '
     'flags_container';
     place-items: center;
-    /* background-color: #868686; */
+    background-color: #868686;
     }
 .title_container {
   grid-area: title_container;
@@ -48,14 +48,16 @@ color: #868686;
   grid-area: flags_container;
   width: 100%;
   max-width: min(80vw, 800px);
-  display: grid;
-  grid-auto-flow: dense;
-  grid-auto-rows: min-content;
-  grid-template-columns: repeat(auto-fit, minmax(min(30vw, 150px), 1fr));
-  align-content: center;
+  /* display: grid; */
+  /* grid-auto-flow: dense; */
+  /* grid-auto-rows: min-content; */
+  /* grid-template-columns: repeat(auto-fit, minmax(min(30vw, 150px), 1fr)); */
+  /* align-content: center; */
   /* justify-content: center; */
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   gap: 1rem;
   padding-inline: 2em;
   filter: grayscale(100%);
@@ -63,9 +65,11 @@ color: #868686;
   /* background-color: #868686; */
   align-items: center;
   align-self: start;
+  gap: 1.5rem;
   }
 .flag {
-width: minmax(100%, 100px);
+/* width: minmax(100%, 100px); */
+max-width: min(25vw, 150px);
   object-position: center;
   object-fit: cover;
   padding-inline: 10px;
@@ -89,9 +93,9 @@ width: minmax(100%, 100px);
 
 @media (min-width:600px) {
   .flags_container {
-    grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fill, minmax(min(auto, 100%), 1fr));
-    align-items: center;
+    /* grid-auto-rows: auto; */
+    /* grid-template-columns: repeat(auto-fill, minmax(min(auto, 100%), 1fr)); */
+    /* align-items: center; */
     /* align-content: start; */
     gap: 3rem;
 
@@ -101,7 +105,6 @@ width: minmax(100%, 100px);
 
   .flag {
     /* width: 200px; */
-    width: 100%;
     max-width: 200px;
     height: auto;
     object-fit: contain;
