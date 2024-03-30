@@ -73,7 +73,7 @@ const Navbar = () => {
                             Clientes
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link
                             className={styles.link}
                             activeClass={styles.active}
@@ -85,7 +85,7 @@ const Navbar = () => {
                             duration={500}>
                             Contáctanos
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
                 <button
                     className={`${styles.nav_close_btn}`}

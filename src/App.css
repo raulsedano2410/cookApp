@@ -22,8 +22,8 @@
 .container-sections {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh min-content min-content min-content 100vh min-content;
-  grid-template-areas: 'home' 'about-us' 'services' 'customers' 'contact-us' 'footer';
+  grid-template-rows: 100vh min-content min-content min-content  min-content;
+  grid-template-areas: 'home' 'about-us' 'services' 'customers'  'footer';
   position: relative;
 
 }
