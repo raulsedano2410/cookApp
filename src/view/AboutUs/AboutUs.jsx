@@ -12,7 +12,7 @@ const AboutUs = () => {
       </div>
       <article className={styles.article}>
         <span>
-          Somos especialistas en calidad, eficacia, bienestar y <br />{' '}
+          Somos especialistas en calidad, eficacia, bienestar y
           adaptabilidad
         </span>
         <p>
