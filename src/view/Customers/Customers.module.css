@@ -7,7 +7,7 @@
     'title_container '
     'flags_container';
     place-items: center;
-    background-color: #868686;
+    /* background-color: #868686; */
     }
 .title_container {
   grid-area: title_container;

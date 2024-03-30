@@ -1,10 +1,9 @@
 .container {
 
-  height: 100%;
+  min-height: 100vh;
   display: grid;
   grid-template-rows: 15% 40% 45%;
   grid-template-areas: 'title' 'images_container' 'article';
-  align-items: end;
 
 }
 
@@ -37,16 +36,10 @@
   height: 100%;
   max-width: 82%;
   grid-area: article;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  */
   display: grid;
-  /* justify-items: start; */
   grid-template-rows: 15% 85%;
-  padding: 0 9%;
   gap: 5px;
+  justify-self: center;
 }
 
 .article>span {
@@ -109,23 +102,49 @@
   .title>h3 {
     font-size: 30px;
     line-height: 36px;
+    width: 100%;
+    text-align: start;
 
+
+    }
+
+  .title {
+    max-width: 10%;
+    justify-self: center;
   }
 
+  .article>span {
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.015em;
+
+    /* N'QUISPE */
+    color: #FBB03F;
+
+
+  }
   .article {
     justify-items: self-start;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding-top: 3em;
+    /* padding-top: 3em; */
   }
 
 
   .article p {
 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
+    text-align: justify;
     letter-spacing: -0.015em;
     color: #868686;
   }
@@ -156,24 +175,16 @@
     max-width: 473px;
     font-size: 30px;
     line-height: 36px;
-    /* justify-self: start; */
-    /* margin-left: 300px; */
-    padding: 0 80px 0 100px;
 
   }
 
-  .title>h3 {
-    text-align: start;
 
-  }
 
   .article {
-    padding: 0;
     width: 100%;
     max-width: 473px;
-    /* justify-self: start; */
-    padding: 0 80px 0 150px;
-    /* margin-left: 300px; */
+    padding: 0;
+
 
   }
 
@@ -182,18 +193,6 @@
     width: 100%;
     max-height: 65px;
     text-align: start;
-
-
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: -0.015em;
-
-    /* N'QUISPE */
-    color: #FBB03F;
   }
 
   .article>p {
@@ -202,16 +201,27 @@
     text-align: start;
 
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: justify;
-    letter-spacing: -0.015em;
+}
+}
 
-    color: #868686;
+@media (orientation: portrait) {
+  .container {
 
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 15% 40% 45%;
+    grid-template-areas: 'title title' 'images_container images_container' 'article article';
+    /* text-align: center; */
 
   }
+
+    .title {
+      max-width: fit-content;
+    }
+
+    .article>p,
+    .article>span {
+      text-align: center;
+
+    }
 }
