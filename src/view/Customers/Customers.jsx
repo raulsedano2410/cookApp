@@ -4,8 +4,8 @@ import styles from './Customers.module.css';
 // Images
 import autoland from '../../assets/images/customers/autoland.png';
 import cobrecon from '../../assets/images/customers/cobrecon.png';
-import eternit from '../../assets/images/customers/eter.svg';
-import gcz from '../../assets/images/customers/gcz.svg';
+import eternit from '../../assets/images/customers/eternit.png';
+import gcz from '../../assets/images/customers/gcz.png';
 import gyplac from '../../assets/images/customers/gyplac.jpg';
 import metalindustrias from '../../assets/images/customers/metalindustrias.png';
 import molinosasociados from '../../assets/images/customers/molinos.svg';
@@ -29,36 +29,6 @@ const Customers = () => {
             <section className={styles.flags_container}>
                 <div className={styles.flag}>
                     <img
-                        src={pegafan}
-                        alt='customers flags'
-                    />
-                </div>
-                <div className={styles.flag}>
-                    <img
-                        src={piramide}
-                        alt='customers flags'
-                    />
-                </div>
-                <div className={styles.flag}>
-                    <img
-                        src={tqc}
-                        alt='customers flags'
-                    />
-                </div>
-                <div className={styles.flag}>
-                    <img
-                        src={autoland}
-                        alt='customers flags'
-                    />
-                </div>
-                <div className={styles.flag}>
-                    <img
-                        src={molinosasociados}
-                        alt='customers flags'
-                    />
-                </div>
-                <div className={styles.flag}>
-                    <img
                         src={nicoll}
                         alt='customers flags'
                     />
@@ -71,13 +41,7 @@ const Customers = () => {
                 </div>
                 <div className={styles.flag}>
                     <img
-                        src={eternit}
-                        alt='customers flags'
-                    />
-                </div>
-                <div className={styles.flag}>
-                    <img
-                        src={gcz}
+                        src={tqc}
                         alt='customers flags'
                     />
                 </div>
@@ -89,7 +53,43 @@ const Customers = () => {
                 </div>
                 <div className={styles.flag}>
                     <img
+                        src={pegafan}
+                        alt='customers flags'
+                    />
+                </div>
+                <div className={styles.flag}>
+                    <img
                         src={metalindustrias}
+                        alt='customers flags'
+                    />
+                </div>
+                <div className={styles.flag}>
+                    <img
+                        src={molinosasociados}
+                        alt='customers flags'
+                    />
+                </div>
+                <div className={`${styles.flag} ${styles.eternit}`}>
+                    <img
+                        src={eternit}
+                        alt='customers flags'
+                    />
+                </div>
+                <div className={`${styles.flag} ${styles.gcz}`}>
+                    <img
+                        src={gcz}
+                        alt='customers flags'
+                    />
+                </div>
+                <div className={styles.flag}>
+                    <img
+                        src={autoland}
+                        alt='customers flags'
+                    />
+                </div>
+                <div className={`${styles.flag} ${styles.piramide}`}>
+                    <img
+                        src={piramide}
                         alt='customers flags'
                     />
                 </div>
