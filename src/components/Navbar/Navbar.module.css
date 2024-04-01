@@ -161,3 +161,16 @@
 
   }
 }
+@media (max-width: 350px) {
+  .link {
+    font-size: 1.5em;
+  }
+
+  .nav {
+    top: -110vh;
+  }
+
+  .responsive_nav {
+    transform: translateY(110vh);
+  }
+}

@@ -18,24 +18,26 @@ const Services = () => {
         <div
             className={styles.container}
             id='services-id'>
-            <div className={styles.title_container}>
-                <h3>Nuestros Servicios</h3>
-            </div>
-            <div className={styles.cards_container}>
-                {servicesData.map((s) => {
-                    return (
-                        <ServicesCard
-                            showCard={showCard}
-                            setShowCard={setShowCard}
-                            key={s.id}
-                            id={s.id}
-                            image={s.image}
-                            title={s.title}
-                            description={s.description}
-                        />
-                    );
-                })}
-            </div>
+            <section className={styles.contain_box}>
+                <div className={styles.title_container}>
+                    <h3>Nuestros Servicios</h3>
+                </div>
+                <div className={styles.cards_container}>
+                    {servicesData.map((s) => {
+                        return (
+                            <ServicesCard
+                                showCard={showCard}
+                                setShowCard={setShowCard}
+                                key={s.id}
+                                id={s.id}
+                                image={s.image}
+                                title={s.title}
+                                description={s.description}
+                            />
+                        );
+                    })}
+                </div>
+            </section>
         </div>
     );
 };
