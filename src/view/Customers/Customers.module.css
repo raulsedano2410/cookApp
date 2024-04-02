@@ -103,7 +103,7 @@
 }
 
 .piramide {
-  min-width: 150px;
+  min-width: 120px;
 }
 
 .tqc>img, .molinosasociados>img {
@@ -120,6 +120,10 @@
   background-color: #635656;
   /* padding: 13px 8px; */
   padding-block: 13px;
+}
+
+.cobrecon {
+  min-width: 120px;
 }
 
 @media (min-width:600px) {
@@ -181,12 +185,51 @@
 
 @media (min-width:600px) {
 
-  .flags_container {
-    grid-auto-flow: dense;
-    grid-auto-rows: 0.25fr;
-    grid-template-columns: repeat(auto-fit, minmax(min(30vw, 120px), 1fr));
-
-
-
+  .customers_container {
+    width: 55%;
+    min-height: 55vh;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 1.5fr 6.5fr;
+    align-items: start;
+    /* background-color: #868686; */
   }
+
+  .title_container {
+    align-items: center;
+  }
+
+  .flags_container {
+    grid-auto-rows: 0.25fr;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 3rem;
+    max-width: 100%;
+    height: 90%;
+  }
+
+  .flags_container>*:last-child {
+
+    justify-self: center;
+  }
+
+  .cobrecon, .piramide {
+    min-width: 160px;
+  }
+
+  .flags_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(30vw, 150px), 1fr));
+    justify-content: center;
+    /* Otras propiedades */
+  }
+
+  .flags_container::after {
+    content: "";
+    width: 0;
+    grid-column: 1 / -1;
+    /* Este pseudo-elemento ocupa todas las columnas */
+    visibility: hidden;
+    /* Lo hacemos invisible */
+  }
+
+
 }

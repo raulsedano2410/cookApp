@@ -9,7 +9,7 @@ import gcz from '../../assets/images/customers/gcz.png';
 import gyplac from '../../assets/images/customers/gyplac.jpg';
 import metalindustrias from '../../assets/images/customers/metalindustrias.png';
 import molinosasociados from '../../assets/images/customers/molinos.svg';
-import nicoll from '../../assets/images/customers/nicoll.svg';
+import nicoll from '../../assets/images/customers/nicoll.jpg';
 import pegafan from '../../assets/images/customers/pegafan.png';
 import piramide from '../../assets/images/customers/piramide.png';
 import tqc from '../../assets/images/customers/tqc.jpg';
@@ -35,7 +35,7 @@ const Customers = () => {
                             alt='customers flags'
                         />
                     </div>
-                    <div className={styles.flag}>
+                    <div className={`${styles.flag} ${styles.cobrecon}`}>
                         <img
                             src={cobrecon}
                             alt='customers flags'
