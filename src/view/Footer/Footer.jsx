@@ -13,7 +13,8 @@ const Footer = () => {
       </div>
 
       <p className={styles.address}>Dirección <br />
-          Asoc. Villa Real Madrid II Mz B LT 10 S.M.P</p>
+        Asoc. Villa Real Madrid II S.M.P</p>
+
       <p className={styles.contact}>Contácto <br />
           998 244 597 <br />
           nquispe_buffete@hotmail.com</p>
