@@ -191,6 +191,10 @@
 }
 
 @media (min-width: 1025px) {
+    .container {
+        padding-top: 1em;
+    }
+
     .content_box {
         max-height: 83%;
         grid-template-columns: 2fr 3fr;
@@ -200,7 +204,6 @@
         place-content: center;
         place-items: center;
         align-self: center;
-
     }
 
 
