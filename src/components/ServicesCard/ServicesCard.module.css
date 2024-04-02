@@ -107,7 +107,8 @@
   }
 
   .title_hidden {
-    /* margin-bottom: 25px; */
+    margin-bottom: 10px;
+    /* align-items: start; */
     color: #ffffff;
     transition-property: color;
     transition-duration: .5s;

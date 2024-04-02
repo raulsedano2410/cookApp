@@ -1,90 +1,99 @@
-.customers_container {
-  height: 100vh;
+.container {
+  min-height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers_container {
+  min-height: 92vh;
+  /* height: 100%; */
+  width: 82%;
   display: grid;
-  grid-template-rows: 2fr 6fr;
+  grid-template-rows: 1.5fr 6.5fr;
   grid-template-areas:
     'title_container '
     'flags_container';
   place-items: center;
-  background-color: #868686;
+  place-content: center;
 }
 
 .title_container {
   grid-area: title_container;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: end; */
-  background-color: #fff;
-  align-self: end;
+  justify-content: center;
 }
 
 .title_container>h3 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 1.4em;
   line-height: 30px;
   text-align: center;
-  letter-spacing: -0.015em;
   margin: 0;
-
+  width: 100%;
   color: #000000;
-
+  padding-bottom: 1em;
+  justify-self: center;
 }
 
 .title_container>span {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: .87em;
   line-height: 17px;
   text-align: center;
-  letter-spacing: -0.015em;
-  padding: 1em 2em;
 
+  margin: 0;
   color: #868686;
+  width: 100%;
 
 }
 
 .flags_container {
   grid-area: flags_container;
   width: 100%;
-  max-width: min(80vw, 800px);
-  /* display: grid; */
-  /* grid-auto-flow: dense; */
-  /* grid-auto-rows: min-content; */
-  /* grid-template-columns: repeat(auto-fit, minmax(min(30vw, 150px), 1fr)); */
-  /* align-content: center; */
-  /* justify-content: center; */
-  display: flex;
+  height: 100%;
+  max-width: min(80vw, 700px);
+
+  display: grid;
+  grid-auto-flow: dense;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(30vw, 150px), 1fr));
+  align-content: center;
+  justify-content: center;
+  /* display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding-inline: 2em;
+  justify-content: space-around; */
   filter: grayscale(100%);
-  margin: 0;
-  /* background-color: #868686; */
-  align-items: center;
-  align-self: start;
-  gap: 1.5rem;
+  place-items: center;
+  /* gap: 2rem; */
+
 }
 
 .flag {
-  /* width: minmax(100%, 100px); */
-  max-width: min(25vw, 150px);
-  object-position: center;
-  object-fit: cover;
-  padding-inline: 10px;
-  align-self: center;
+  max-width: 90px;
+  display: flex;
 
+  padding-inline: 10px;
+  align-items: center;
+  align-self: center;
 }
 
 .flag>img {
+  margin: 0;
   width: 100%;
   height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 
 .gcz,
@@ -94,16 +103,54 @@
 }
 
 .piramide {
-  min-width: 130px;
+  min-width: 150px;
+}
+
+.tqc>img, .molinosasociados>img {
+  max-width: 75%;
+  margin: auto;
+
+}
+
+.autoland>img {
+  filter: brightness(0) invert(1);
+}
+
+.autoland {
+  background-color: #635656;
+  /* padding: 13px 8px; */
+  padding-block: 13px;
 }
 
 @media (min-width:600px) {
+  .customers_container {
+    min-height: 62vh;
+    /* height: 100%; */
+    width: 92%;
+    display: grid;
+    grid-template-rows: 1.5fr 6.5fr;
+    grid-template-areas:
+      'title_container '
+      'flags_container';
+    place-items: center;
+    place-content: center;
+  }
+
+
   .flags_container {
-    /* grid-auto-rows: auto; */
-    /* grid-template-columns: repeat(auto-fill, minmax(min(auto, 100%), 1fr)); */
-    /* align-items: center; */
-    /* align-content: start; */
-    gap: 3rem;
+
+    grid-area: flags_container;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-auto-flow: dense;
+    grid-auto-rows: 0.25fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(30vw, 110px), 1fr));
+
+
+
+    /* gap: 2rem; */
 
 
 
@@ -111,39 +158,35 @@
 
   .flag {
     /* width: 200px; */
-    max-width: 200px;
-    height: auto;
-    object-fit: contain;
+    max-width: 120px;
+    /* height: auto; */
   }
 
   .title_container>h3 {
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
+
+
+    font-size: 2em;
     line-height: 36px;
     text-align: center;
     letter-spacing: -0.015em;
 
     color: #000000;
-
-
-
   }
 
   .title_container>span {
+    font-size: 1em;
+  }
+}
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: -0.015em;
+@media (min-width:600px) {
 
-    color: #868686;
-    padding-block: 1em;
+  .flags_container {
+    grid-auto-flow: dense;
+    grid-auto-rows: 0.25fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(30vw, 120px), 1fr));
+
+
 
   }
 }
