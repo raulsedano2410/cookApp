@@ -195,7 +195,8 @@
   }
 
   .title_container {
-    align-items: center;
+    font-size: 1.2em;
+
   }
 
   .flags_container {

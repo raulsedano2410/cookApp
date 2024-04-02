@@ -6,15 +6,15 @@
     /* background-color: #868686; */
     width: 100%;
     height: 100%;
-    }
+}
 
-    .content_box {
+.content_box {
 
-        height: 90%;
-        width: 91%;
+    height: 90%;
+    width: 91%;
     display: grid;
     grid-template-rows: 15% 40% 45%;
-    grid-template-areas: 'title' 'images_container' 'article';
+    grid-template-areas: 'title''images_container''article';
     /* background-color: aqua; */
 
 }
@@ -101,6 +101,7 @@
     object-position: center;
 
 }
+
 @media (max-width: 350px) {
 
     .container {
@@ -123,18 +124,18 @@
 @media (min-width: 600px) {
     .container {
         height: 100%;
-        }
+    }
 
-.content_box {
+    .content_box {
 
-    grid-template-rows: 15% 45% 40%;
-    grid-template-areas: 'title' 'images_container' 'article';
+        grid-template-rows: 15% 45% 40%;
+        grid-template-areas: 'title''images_container''article';
 
     }
 
-.title {
-    justify-self: center;
-}
+    .title {
+        justify-self: center;
+    }
 
     .title>h3 {
         font-size: 30px;
@@ -172,7 +173,7 @@
         text-align: center;
         height: 100%;
         align-content: center;
-        }
+    }
 
     .article p {
 
@@ -188,18 +189,19 @@
         /* align-content: start; */
     }
 }
+
 @media (min-width: 1025px) {
-.content_box {
-    max-height: 83%;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto;
-    grid-template-areas: 'title images_container '
-        ' article images_container';
+    .content_box {
+        max-height: 83%;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'title images_container '
+            ' article images_container';
         place-content: center;
         place-items: center;
         align-self: center;
 
-        }
+    }
 
 
 
@@ -207,10 +209,11 @@
         grid-area: images_container;
 
     }
+
     .article,
     .title {
         max-width: 82%;
-        }
+    }
 
     .title,
     .article,
@@ -219,29 +222,29 @@
         width: 100%;
         height: 100%;
         padding: 0;
-        }
+    }
 
     .title>h3 {
         text-align: start;
         max-width: 82%;
         justify-self: center;
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .article>span {
         text-align: start;
-        max-width:82%;
+        max-width: 82%;
         justify-self: center;
-        font-size: 1.3em;
-        }
+        font-size: 1.2em;
+    }
 
     .article>p {
-        font-size: 1.2em;
+        font-size: 1.1em;
         text-align: justify;
         /* align-content: center; */
-        max-width:82%;
+        max-width: 82%;
         justify-self: center;
 
-        }
+    }
 
 }
