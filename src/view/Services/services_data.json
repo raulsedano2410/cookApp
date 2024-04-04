@@ -3,24 +3,24 @@
     "id": 1,
     "image": "comedor_corporativo.png",
     "title": "Comedor Corporativo",
-    "description": "Nos adaptamos al requerimiento corporativo con nuestro menú corporativo, desayuno corporativo y platos a la carta."
+    "description": "Nos adaptamos a todo requerimiento con nuestro menú, desayuno  y platos a la carta."
   },
   {
     "id": 2,
     "image": "comedor_mangement_system.jpg",
     "title": "Comedor Mangement System",
-    "description": "Sistema de control de servicio: \n  manejo de base de datos, reportes diarios y control de operaciones."
+    "description": "Sistema de control de servicio: \n  manejo de base de datos, \nreportes diarios y control de operaciones."
   },
   {
     "id": 3,
     "image": "food_stop.jpg",
     "title": "Food Stop",
-    "description": "Puntos de acceso a snacks, \ncafé, gaseosas, fritas y \nalimentos varios."
+    "description": "Puntos de acceso a snacks,\ncafé, gaseosas, sandwich y \nalimentos varios."
   },
   {
     "id": 4,
     "image": "catering.jpg",
     "title": "Catering y Buffet",
-    "description": "Servicio de buffet y catering con menús personalizados para una alta calidad de eventos y \nreuniones."
+    "description": "Servicio de buffet y catering con\nmenús personalizados para una alta calidad de eventos y \nreuniones."
   }
 ]

@@ -95,7 +95,7 @@
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1125px) {
     .contain_box {
         height: 82%;
         display: grid;

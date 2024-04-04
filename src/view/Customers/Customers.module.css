@@ -153,17 +153,10 @@
     grid-template-columns: repeat(auto-fit, minmax(min(30vw, 110px), 1fr));
 
 
-
-    /* gap: 2rem; */
-
-
-
   }
 
   .flag {
-    /* width: 200px; */
     max-width: 120px;
-    /* height: auto; */
   }
 
   .title_container>h3 {
@@ -183,15 +176,15 @@
   }
 }
 
-@media (min-width:650px) {
+@media (min-width:1025px) {
 
   .customers_container {
     width: 55%;
-    min-height: 55vh;
+    min-height: 65vh;
     grid-auto-columns: 1fr;
     grid-template-rows: 1.5fr 6.5fr;
     align-items: start;
-    /* background-color: #868686; */
+    padding-top: 2em;
   }
 
   .title_container {

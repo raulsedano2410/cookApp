@@ -24,8 +24,7 @@ const Customers = () => {
                 <div className={styles.title_container}>
                     <h3>Todos nuestros clientes satisfechos</h3>
                     <span>
-                        Nuestra calidad es importante para que nuestros clientes queden
-                        satisfechos
+                        Nuestra calidad es importante para atender las necesidades de nuestros consumidores.
                     </span>
                 </div>
                 <section className={styles.flags_container}>

@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { counterContext } from '../../context/counterContext';
 import { Link } from 'react-scroll';
 import close_icon from '../../assets/images/navbar_Icons/close_navbar.svg';
-import open_icon from '../../assets/images/navbar_Icons/open_navbar.svg'
+import open_icon from '../../assets/images/navbar_Icons/menu_naranja.png'
 
 import styles from './Navbar.module.css';
 
