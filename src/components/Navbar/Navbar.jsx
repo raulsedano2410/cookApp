@@ -17,34 +17,34 @@ const Navbar = () => {
         handleToggle()
 
     };
-    const existeElementoHome = () => {
-        // Verificar si existe un elemento con la clase 'home'
-        const elementoHome = document.querySelector('.home');
-        return !!elementoHome; // Devuelve true si existe, false si no
-    };
+    // const existeElementoHome = () => {
+    //     // Verificar si existe un elemento con la clase 'home'
+    //     const elementoHome = document.querySelector('.home');
+    //     return !!elementoHome; // Devuelve true si existe, false si no
+    // };
 
-    // barToogle = existeElementoHome()
-    if (!existeElementoHome()) {
-        setLocalStorage(false);
-    }
+    // // barToogle = existeElementoHome()
+    // if (!existeElementoHome()) {
+    //     setLocalStorage(false);
+    // }
 
-    useEffect(() => {
-        const handleScroll = () => {
-            // Tu código aquí que quieres ejecutar en cada scroll
-            console.log('Se hizo scroll!');
-            if (!existeElementoHome()) {
-                setLocalStorage(false);
-            }
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         // Tu código aquí que quieres ejecutar en cada scroll
+    //         console.log('Se hizo scroll!');
+    //         if (!existeElementoHome()) {
+    //             setLocalStorage(false);
+    //         }
+    //     };
 
-        // Agrega el listener de evento cuando el componente se monta
-        window.addEventListener('scroll', handleScroll);
+    //     // Agrega el listener de evento cuando el componente se monta
+    //     window.addEventListener('scroll', handleScroll);
 
-        // Limpieza: Remueve el listener de evento cuando el componente se desmonte
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []); // Asegúrate de pasar un array vacío como segundo argumento para evitar efectos no deseados debido a la ejecución repetida del efecto
+    //     // Limpieza: Remueve el listener de evento cuando el componente se desmonte
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []); // Asegúrate de pasar un array vacío como segundo argumento para evitar efectos no deseados debido a la ejecución repetida del efecto
 
 
     return (
