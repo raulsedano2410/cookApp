@@ -10,10 +10,10 @@
 
 .content_box {
 
-    height: 90%;
+    min-height: 90vh;
     width: 91%;
     display: grid;
-    grid-template-rows: 15% 40% 45%;
+    grid-template-rows: auto auto auto;
     grid-template-areas: 'title''images_container''article';
     /* background-color: aqua; */
 
@@ -29,7 +29,7 @@
     height: 100%;
 }
 
-.title>h3 {
+.title>h2 {
 
     font-family: 'Inter';
     font-style: normal;
@@ -123,12 +123,17 @@
 
 @media (min-width: 600px) {
     .container {
-        height: 100%;
+        /* max-height: fit-content; */
+        height: auto;
+        /* flex-direction: column;
+        justify-content: start; */
+        /* background-color: #FBB03F; */
     }
 
     .content_box {
-
-        grid-template-rows: 15% 45% 40%;
+        max-height: 82%;
+        /* background-color: #6f1b1b; */
+        grid-template-rows: auto auto auto;
         grid-template-areas: 'title''images_container''article';
 
     }
@@ -137,7 +142,7 @@
         justify-self: center;
     }
 
-    .title>h3 {
+    .title>h2 {
         font-size: 30px;
         line-height: 36px;
         width: 100%;
@@ -192,7 +197,9 @@
 
 @media (min-width: 1025px) {
     .container {
-        padding-top: 1em;
+        /* background-color: #868686; */
+        flex-direction: column;
+        justify-content: end;
     }
 
     .content_box {
@@ -204,6 +211,7 @@
         place-content: center;
         place-items: center;
         align-self: center;
+        /* background-color: aqua; */
     }
 
 
@@ -227,7 +235,7 @@
         padding: 0;
     }
 
-    .title>h3 {
+    .title>h2 {
         text-align: start;
         max-width: 82%;
         justify-self: center;

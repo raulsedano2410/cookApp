@@ -22,7 +22,7 @@ const Customers = () => {
             <div className={styles.customers_container}>
 
                 <div className={styles.title_container}>
-                    <h3>Todos nuestros clientes satisfechos</h3>
+                    <h2>Todos nuestros clientes satisfechos</h2>
                     <span>
                         Nuestra calidad es importante para atender las necesidades de nuestros consumidores.
                     </span>

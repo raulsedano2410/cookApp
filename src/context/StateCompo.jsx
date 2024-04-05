@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { counterContext } from './counterContext';
+import useLocalStorage from '../Hooks/useLocalStorage'
 
 const StateCompo = ({ children }) => {
     const [toggle, setToggle] = useState(false);
+    const [isActive, setIsActive] = useState(window.localStorage.getItem('text'));
 
     const handleToggle = () => {
         setToggle((t) => !t);
     };
 
-    const [isActive, setIsActive] = useState(window.localStorage.getItem('text'));
     const setLocalStorage = (value) => {
         handleToggle();
         try {
@@ -18,9 +19,9 @@ const StateCompo = ({ children }) => {
             console.error(error);
         }
     };
+
     const toggleTrue = () => {
         setIsActive(true);
-        // handleToggle();
 
     };
 

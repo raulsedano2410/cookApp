@@ -29,7 +29,7 @@
   justify-content: center;
 }
 
-.title_container>h3 {
+.title_container>h2 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -159,7 +159,7 @@
     max-width: 120px;
   }
 
-  .title_container>h3 {
+  .title_container>h2 {
 
 
 

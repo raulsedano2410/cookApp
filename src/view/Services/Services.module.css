@@ -29,7 +29,7 @@
     color: #000000;
 }
 
-.title_container>h3 {
+.title_container>h2 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -76,7 +76,7 @@
         align-self: end;
     }
 
-    .title_container>h3 {
+    .title_container>h2 {
         width: 100%;
         font-size: 1.2em;
 

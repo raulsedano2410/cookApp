@@ -20,7 +20,7 @@ const Services = () => {
             id='services-id'>
             <section className={styles.contain_box}>
                 <div className={styles.title_container}>
-                    <h3>Nuestros Servicios</h3>
+                    <h2>Nuestros Servicios</h2>
                 </div>
                 <div className={styles.cards_container}>
                     {servicesData.map((s) => {

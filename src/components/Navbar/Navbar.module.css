@@ -30,7 +30,7 @@
   padding: 5px 22px;
   color: #fff;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .link:hover {
@@ -81,8 +81,12 @@
   width: 100%;
   object-fit: contain;
   object-position: center;
+
 }
 
+.svg_icon {
+  fill: blue;
+}
 
 @media only screen and (max-width: 1024px) {
 
@@ -162,15 +166,13 @@
     transition: background 0.3s ease-in-out;
     color: #fbb03f;
   }
-}
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
   .link {
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 1.5em;
     line-height: 58px;
     text-align: center;
     letter-spacing: -0.015em;
@@ -179,13 +181,15 @@
   }
 
   .nav_btn {
-    width: 3em;
+    width: 2.5em;
   }
 
   .nav_close_btn {
-    width: 3em;
+    width: 2.2em;
   }
 }
+
+
 
 @media (max-width: 350px) {
   .link {

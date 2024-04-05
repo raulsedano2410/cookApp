@@ -10,7 +10,7 @@ const AboutUs = () => {
             <section className={styles.content_box}>
 
                 <div className={styles.title}>
-                    <h3 >¿Qué nos hace diferentes?</h3>
+                    <h2 >¿Qué nos hace diferentes?</h2>
                 </div>
                 <article className={styles.article}>
                     <span>
@@ -32,7 +32,7 @@ const AboutUs = () => {
                 <div className={styles.images_container}>
                     <img
                         src={imge01}
-                        alt=''
+                        alt='Chef preparando alimentos'
                     />
                 </div>
             </section>
