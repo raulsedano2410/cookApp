@@ -46,7 +46,7 @@ function App() {
             </div>
           }
         />
-        <Route path="/testdb" element={<TestDB />} />
+        <Route path="/myspace/" element={<TestDB />} />
       </Routes>
     </StateCompo>
   );
