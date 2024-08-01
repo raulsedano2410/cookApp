@@ -8,7 +8,7 @@ import Footer from "./view/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import StateCompo from "./context/StateCompo";
 
-import TestDB from "./db/testDB";
+import TestDB from "./components/Testdb/TestDB";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
